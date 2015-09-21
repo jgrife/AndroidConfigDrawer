@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Networking">
+
+        <!-- where %s in android:summary, will resolve to the selected String (human-readable) entry -->
+        <ListPreference
+            android:key="config_drawer_network_env"
+            android:title="Network Environment"
+            android:summary="%s"
+            android:defaultValue="test"
+            android:entries="@array/listArrayNetworkEnv"
+            android:entryValues="@array/listValuesNetworkEnv" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Authorization">
+
+        <Preference
+            android:key="config_drawer_logout"
+            android:title="Logout"
+            android:summary="Clicking will perform a logout." />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Settings">
+
+        <SwitchPreference
+            android:key="config_drawer_enable_crashlytics"
+            android:title="Enable Crashlytics"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About App">
+
+        <Preference
+            android:key="config_drawer_app_build"
+            android:title="Build Type &amp; Version" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

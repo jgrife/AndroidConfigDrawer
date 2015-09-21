@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listArrayNetworkEnv">
+        <item>Staging</item>
+        <item>Test</item>
+        <item>Demo</item>
+        <item>Production</item>
+    </string-array>
+    <string-array name="listValuesNetworkEnv">
+        <item>staging</item>
+        <item>test</item>
+        <item>demo</item>
+        <item>prod</item>
+    </string-array>
+</resources>

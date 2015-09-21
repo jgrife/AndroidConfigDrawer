@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Config Drawer Example</string>
+
+    <string name="left_drawer_layout_link">Screen with Left Drawer</string>
+    <string name="no_left_drawer_layout_link">Screen with no Left Drawer</string>
+
+    <string name="left_drawer_layout_text">Activity with Left Drawer Layout</string>
+    <string name="no_left_drawer_layout_text">Activity with NO Left Drawer Layout. Use the back
+    button to navigate back to previous screen.</string>
+
+    <string name="config_drawer_text">You can slide the Config Drawer out to the right by swiping from the
+    right side of the screen --></string>
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+</resources>

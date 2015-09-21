@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/activity_with_drawer"
+            android:title="@string/left_drawer_layout_link" />
+        <item
+            android:id="@+id/activity_with_no_drawer"
+            android:title="@string/no_left_drawer_layout_link" />
+    </group>
+</menu>
