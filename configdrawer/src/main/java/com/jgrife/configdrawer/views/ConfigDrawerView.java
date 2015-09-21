@@ -120,17 +120,16 @@ public class ConfigDrawerView extends FrameLayout {
     public void wrapInside(Activity activity) {
         ViewGroup parent = (ViewGroup) activity.findViewById(android.R.id.content);
 
-        // Check for DrawerLayout at the root of the content
-        if (parent.getChildAt(0) instanceof DrawerLayout) {  // Applies to BaseActivity
-            ViewGroup content = (ViewGroup) parent.getChildAt(0);  // Content root drawer layout
-            View nv = mDrawerLayout.findViewById(R.id.config_drawer_navigation_view);  // Config Drawer NavigationView
-            mDrawerLayout.removeViewAt(0);  // Remove Config Drawer NavigationView's parent
-            content.addView(nv);  // Add NavigationView to activity layout
-        } else {  // Applies to LoginActivity
-            View content = parent.getChildAt(0);  // Content root layout
-            parent.removeViewAt(0);  // Remove content layout's parent
-            mDrawerLayout.addView(content, 0);  // Add activity content to Config Drawer layout
-            parent.addView(this);  // Add built-up Config Drawer layout back to activity layout
+        if (parent.getChildAt(0) instanceof DrawerLayout) {
+            ViewGroup content = (ViewGroup) parent.getChildAt(0);
+            View nv = mDrawerLayout.findViewById(R.id.config_drawer_navigation_view);
+            mDrawerLayout.removeViewAt(0);
+            content.addView(nv);
+        } else {
+            View content = parent.getChildAt(0);
+            parent.removeViewAt(0);
+            mDrawerLayout.addView(content, 0);
+            parent.addView(this);
         }
     }
 
