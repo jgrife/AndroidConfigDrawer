@@ -12,6 +12,13 @@
             android:entries="@array/listArrayNetworkEnv"
             android:entryValues="@array/listValuesNetworkEnv" />
 
+        <com.jgrife.configdrawer.views.EditTextPreference
+            android:key="config_drawer_network_timeout"
+            android:title="Network Timeout (millisec)"
+            android:summary="%s milliseconds"
+            android:numeric="integer"
+            android:defaultValue="2500" />
+
     </PreferenceCategory>
 
     <PreferenceCategory android:title="Authorization">
