@@ -1,1 +1,1 @@
-include ':app', ':configdrawer'
+include ':sample', ':library'
